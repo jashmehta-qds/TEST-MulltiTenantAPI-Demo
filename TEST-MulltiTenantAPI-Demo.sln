@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{B3D66650-E4AA-4D3E-882D-3153DD49267D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TEST_MulltiTenantAPI_Demo.Api", "TEST_MulltiTenantAPI_Demo.Api\TEST_MulltiTenantAPI_Demo.Api.csproj", "{1620D6F6-2134-4DCC-8078-9151D88E4962}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TEST_MulltiTenantAPI_Demo.Domain", "TEST_MulltiTenantAPI_Demo.Domain\TEST_MulltiTenantAPI_Demo.Domain.csproj", "{1D619CF1-14DB-45E3-87E6-6D212555FADD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TEST_MulltiTenantAPI_Demo.Entity", "TEST_MulltiTenantAPI_Demo.Entity\TEST_MulltiTenantAPI_Demo.Entity.csproj", "{7C44121A-1C96-4B6C-8C69-3A65E18761D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TEST_MulltiTenantAPI_Demo.Test", "TEST_MulltiTenantAPI_Demo.Test\TEST_MulltiTenantAPI_Demo.Test.csproj", "{D81BE1B1-1A76-4A11-A8A8-D72AC2E5FF7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3D66650-E4AA-4D3E-882D-3153DD49267D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D66650-E4AA-4D3E-882D-3153DD49267D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D66650-E4AA-4D3E-882D-3153DD49267D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D66650-E4AA-4D3E-882D-3153DD49267D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1620D6F6-2134-4DCC-8078-9151D88E4962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1620D6F6-2134-4DCC-8078-9151D88E4962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1620D6F6-2134-4DCC-8078-9151D88E4962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1620D6F6-2134-4DCC-8078-9151D88E4962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D619CF1-14DB-45E3-87E6-6D212555FADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D619CF1-14DB-45E3-87E6-6D212555FADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D619CF1-14DB-45E3-87E6-6D212555FADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D619CF1-14DB-45E3-87E6-6D212555FADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C44121A-1C96-4B6C-8C69-3A65E18761D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C44121A-1C96-4B6C-8C69-3A65E18761D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C44121A-1C96-4B6C-8C69-3A65E18761D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C44121A-1C96-4B6C-8C69-3A65E18761D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D81BE1B1-1A76-4A11-A8A8-D72AC2E5FF7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D81BE1B1-1A76-4A11-A8A8-D72AC2E5FF7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D81BE1B1-1A76-4A11-A8A8-D72AC2E5FF7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D81BE1B1-1A76-4A11-A8A8-D72AC2E5FF7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96C822E3-A6ED-4495-A91D-2EC094CB45B2}
+	EndGlobalSection
+EndGlobal

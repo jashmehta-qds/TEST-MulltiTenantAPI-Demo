@@ -1,0 +1,964 @@
+===> 2021-01-28 13:10:50.780 +05:30 [Information] Starting web host
+===> 2021-01-28 13:10:50.952 +05:30 [Information] User profile is available. Using '"C:\Users\Anish\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-01-28 13:10:51.064 +05:30 [Debug] Reading data from file '"C:\Users\Anish\AppData\Local\ASP.NET\DataProtection-Keys\key-1e7f607b-911c-4721-975c-6bc495f47ff8.xml"'.
+===> 2021-01-28 13:10:51.094 +05:30 [Debug] Reading data from file '"C:\Users\Anish\AppData\Local\ASP.NET\DataProtection-Keys\key-c4cb3bd4-2b87-46b2-bb82-ac9be3dc371b.xml"'.
+===> 2021-01-28 13:10:51.108 +05:30 [Debug] Found key {1e7f607b-911c-4721-975c-6bc495f47ff8}.
+===> 2021-01-28 13:10:51.130 +05:30 [Debug] Found key {c4cb3bd4-2b87-46b2-bb82-ac9be3dc371b}.
+===> 2021-01-28 13:10:51.144 +05:30 [Debug] Considering key {1e7f607b-911c-4721-975c-6bc495f47ff8} with expiration date 2021-04-05 09:20:09Z as default key.
+===> 2021-01-28 13:10:51.218 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2021-01-28 13:10:51.221 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2021-01-28 13:10:51.222 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2021-01-28 13:10:51.225 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2021-01-28 13:10:51.228 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2021-01-28 13:10:51.234 +05:30 [Debug] Using key {1e7f607b-911c-4721-975c-6bc495f47ff8} as the default key.
+===> 2021-01-28 13:10:51.235 +05:30 [Debug] Key ring with default key {1e7f607b-911c-4721-975c-6bc495f47ff8} was loaded during application startup.
+===> 2021-01-28 13:10:52.241 +05:30 [Information] Startup::Configure
+===> 2021-01-28 13:10:56.364 +05:30 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2021-01-28 13:10:56.607 +05:30 [Debug] An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: "configuration added for 'Proxies:UseLazyLoadingProxies', configuration added for 'Proxies:UseChangeTrackingProxies'".
+===> 2021-01-28 13:10:57.960 +05:30 [Information] Entity Framework Core "5.0.2" initialized '"MasterDbContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=TestDB-af6f3f64-693f-43a9-9e58-488fdedfb71d using lazy-loading proxies "
+===> 2021-01-28 13:10:58.026 +05:30 [Debug] Compiling query expression: "
+"'"DbSet<Account>()
+    .Any()"'
+===> 2021-01-28 13:10:58.330 +05:30 [Debug] Generated query execution expression: "
+"'"queryContext => new QueryingEnumerable<bool>(
+    queryContext, 
+    new ResultEnumerable(() => new ValueBuffer(new object[]{ (object)InMemoryShapedQueryCompilingExpressionVisitor.Table(
+        queryContext: queryContext, 
+        entityType: EntityType: Account)
+        .Any() }))
+        .Select(valueBuffer => new ValueBuffer(new object[]{ (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+            valueBuffer: valueBuffer, 
+            index: 0, 
+            property: null) })), 
+    Func<QueryContext, ValueBuffer, bool>, 
+    TEST_MulltiTenantAPI_Demo.Entity.Context.MasterDbContext, 
+    False
+)
+    .Single()"'
+===> 2021-01-28 13:10:58.695 +05:30 [Debug] '"MasterDbContext"' generated a value for the property '"Id"."Account"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 13:10:58.833 +05:30 [Debug] Context '"MasterDbContext"' started tracking '"Account"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 13:10:58.845 +05:30 [Debug] DetectChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 13:10:58.877 +05:30 [Debug] DetectChanges completed for '"MasterDbContext"'.
+===> 2021-01-28 13:10:58.886 +05:30 [Debug] SaveChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 13:10:58.889 +05:30 [Debug] DetectChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 13:10:58.892 +05:30 [Debug] The unchanged property '"Account"."Created"' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+===> 2021-01-28 13:10:58.894 +05:30 [Debug] The unchanged property '"Account"."Modified"' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+===> 2021-01-28 13:10:58.894 +05:30 [Debug] DetectChanges completed for '"MasterDbContext"'.
+===> 2021-01-28 13:10:58.916 +05:30 [Information] Saved 1 entities to in-memory store.
+===> 2021-01-28 13:10:58.931 +05:30 [Debug] An entity of type '"Account"' tracked by '"MasterDbContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 13:10:58.941 +05:30 [Debug] SaveChanges completed for '"MasterDbContext"' with 1 entities written to the database.
+===> 2021-01-28 13:10:58.941 +05:30 [Debug] Compiling query expression: "
+"'"DbSet<User>()
+    .Any()"'
+===> 2021-01-28 13:10:58.944 +05:30 [Debug] Generated query execution expression: "
+"'"queryContext => new QueryingEnumerable<bool>(
+    queryContext, 
+    new ResultEnumerable(() => new ValueBuffer(new object[]{ (object)InMemoryShapedQueryCompilingExpressionVisitor.Table(
+        queryContext: queryContext, 
+        entityType: EntityType: User)
+        .Any() }))
+        .Select(valueBuffer => new ValueBuffer(new object[]{ (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+            valueBuffer: valueBuffer, 
+            index: 0, 
+            property: null) })), 
+    Func<QueryContext, ValueBuffer, bool>, 
+    TEST_MulltiTenantAPI_Demo.Entity.Context.MasterDbContext, 
+    False
+)
+    .Single()"'
+===> 2021-01-28 13:10:58.972 +05:30 [Debug] '"MasterDbContext"' generated a value for the property '"Id"."User"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 13:10:59.047 +05:30 [Debug] Context '"MasterDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 13:10:59.052 +05:30 [Debug] DetectChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 13:10:59.066 +05:30 [Debug] DetectChanges completed for '"MasterDbContext"'.
+===> 2021-01-28 13:10:59.066 +05:30 [Debug] SaveChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 13:10:59.066 +05:30 [Debug] DetectChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 13:10:59.067 +05:30 [Debug] The unchanged property '"User"."Created"' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+===> 2021-01-28 13:10:59.067 +05:30 [Debug] The unchanged property '"User"."Modified"' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+===> 2021-01-28 13:10:59.067 +05:30 [Debug] DetectChanges completed for '"MasterDbContext"'.
+===> 2021-01-28 13:10:59.068 +05:30 [Information] Saved 1 entities to in-memory store.
+===> 2021-01-28 13:10:59.068 +05:30 [Debug] An entity of type '"User"' tracked by '"MasterDbContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 13:10:59.068 +05:30 [Debug] SaveChanges completed for '"MasterDbContext"' with 1 entities written to the database.
+===> 2021-01-28 13:10:59.071 +05:30 [Debug] '"MasterDbContext"' disposed.
+===> 2021-01-28 13:10:59.135 +05:30 [Debug] Loaded hosting startup assembly "TEST_MulltiTenantAPI_Demo.Api"
+===> 2021-01-28 13:10:59.198 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/info - -
+===> 2021-01-28 13:10:59.201 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2021-01-28 13:10:59.235 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 13:10:59.248 +05:30 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2021-01-28 13:10:59.317 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/info"'
+===> 2021-01-28 13:10:59.317 +05:30 [Debug] Endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController.ApiInfo (TEST_MulltiTenantAPI_Demo.Api)"' with route pattern '"api/Info"' is valid for the request path '"/api/info"'
+===> 2021-01-28 13:10:59.327 +05:30 [Debug] Request matched endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController.ApiInfo (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:10:59.640 +05:30 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2021-01-28 13:10:59.642 +05:30 [Information] Executing endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController.ApiInfo (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:10:59.654 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+===> 2021-01-28 13:10:59.693 +05:30 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController" ("TEST_MulltiTenantAPI_Demo.Api").
+===> 2021-01-28 13:10:59.694 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2021-01-28 13:10:59.694 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2021-01-28 13:10:59.695 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2021-01-28 13:10:59.695 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2021-01-28 13:10:59.695 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2021-01-28 13:11:01.419 +05:30 [Debug] Executing controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 13:11:01.420 +05:30 [Debug] Executed controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 13:11:01.428 +05:30 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2021-01-28 13:11:01.455 +05:30 [Information] Executed action "TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController.ApiInfo (TEST_MulltiTenantAPI_Demo.Api)" in 30.8121ms
+===> 2021-01-28 13:11:01.456 +05:30 [Information] Executed endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController.ApiInfo (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:11:01.468 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api/info - - - 200 2517 text/html 2272.8602ms
+===> 2021-01-28 13:11:14.041 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/swagger - -
+===> 2021-01-28 13:11:14.050 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/swagger - - - 301 - - 9.1866ms
+===> 2021-01-28 13:11:14.051 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/swagger/index.html - -
+===> 2021-01-28 13:11:14.296 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/swagger/index.html - - - 200 - text/html;charset=utf-8 244.3416ms
+===> 2021-01-28 13:11:14.316 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/swagger/swagger-ui.css - -
+===> 2021-01-28 13:11:14.318 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/swagger/swagger-ui-bundle.js - -
+===> 2021-01-28 13:11:14.319 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/swagger/swagger-ui-standalone-preset.js - -
+===> 2021-01-28 13:11:14.409 +05:30 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+===> 2021-01-28 13:11:14.409 +05:30 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+===> 2021-01-28 13:11:14.414 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/swagger/swagger-ui.css - - - 200 142933 text/css 97.3328ms
+===> 2021-01-28 13:11:14.428 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 109.4171ms
+===> 2021-01-28 13:11:14.428 +05:30 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+===> 2021-01-28 13:11:14.449 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 130.8467ms
+===> 2021-01-28 13:11:14.700 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/swagger/v1/swagger.json - -
+===> 2021-01-28 13:11:14.739 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/swagger/favicon-32x32.png - -
+===> 2021-01-28 13:11:14.747 +05:30 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+===> 2021-01-28 13:11:14.754 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/swagger/favicon-32x32.png - - - 200 628 image/png 15.3194ms
+===> 2021-01-28 13:11:16.174 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1474.3243ms
+===> 2021-01-28 13:23:59.679 +05:30 [Information] Starting web host
+===> 2021-01-28 13:23:59.840 +05:30 [Information] User profile is available. Using '"C:\Users\Anish\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-01-28 13:23:59.904 +05:30 [Debug] Reading data from file '"C:\Users\Anish\AppData\Local\ASP.NET\DataProtection-Keys\key-1e7f607b-911c-4721-975c-6bc495f47ff8.xml"'.
+===> 2021-01-28 13:23:59.939 +05:30 [Debug] Reading data from file '"C:\Users\Anish\AppData\Local\ASP.NET\DataProtection-Keys\key-c4cb3bd4-2b87-46b2-bb82-ac9be3dc371b.xml"'.
+===> 2021-01-28 13:23:59.950 +05:30 [Debug] Found key {1e7f607b-911c-4721-975c-6bc495f47ff8}.
+===> 2021-01-28 13:23:59.957 +05:30 [Debug] Found key {c4cb3bd4-2b87-46b2-bb82-ac9be3dc371b}.
+===> 2021-01-28 13:23:59.970 +05:30 [Debug] Considering key {1e7f607b-911c-4721-975c-6bc495f47ff8} with expiration date 2021-04-05 09:20:09Z as default key.
+===> 2021-01-28 13:24:00.058 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2021-01-28 13:24:00.061 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2021-01-28 13:24:00.062 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2021-01-28 13:24:00.068 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2021-01-28 13:24:00.070 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2021-01-28 13:24:00.079 +05:30 [Debug] Using key {1e7f607b-911c-4721-975c-6bc495f47ff8} as the default key.
+===> 2021-01-28 13:24:00.081 +05:30 [Debug] Key ring with default key {1e7f607b-911c-4721-975c-6bc495f47ff8} was loaded during application startup.
+===> 2021-01-28 13:24:00.132 +05:30 [Information] Startup::Configure
+===> 2021-01-28 13:24:01.636 +05:30 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2021-01-28 13:24:01.772 +05:30 [Debug] An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: "configuration added for 'Proxies:UseLazyLoadingProxies', configuration added for 'Proxies:UseChangeTrackingProxies'".
+===> 2021-01-28 13:24:04.506 +05:30 [Information] Entity Framework Core "5.0.2" initialized '"MasterDbContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=TestDB-1e55a6f5-2c34-41f4-85c3-5d02cc27312b using lazy-loading proxies "
+===> 2021-01-28 13:24:04.553 +05:30 [Debug] Compiling query expression: "
+"'"DbSet<Account>()
+    .Any()"'
+===> 2021-01-28 13:24:04.876 +05:30 [Debug] Generated query execution expression: "
+"'"queryContext => new QueryingEnumerable<bool>(
+    queryContext, 
+    new ResultEnumerable(() => new ValueBuffer(new object[]{ (object)InMemoryShapedQueryCompilingExpressionVisitor.Table(
+        queryContext: queryContext, 
+        entityType: EntityType: Account)
+        .Any() }))
+        .Select(valueBuffer => new ValueBuffer(new object[]{ (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+            valueBuffer: valueBuffer, 
+            index: 0, 
+            property: null) })), 
+    Func<QueryContext, ValueBuffer, bool>, 
+    TEST_MulltiTenantAPI_Demo.Entity.Context.MasterDbContext, 
+    False
+)
+    .Single()"'
+===> 2021-01-28 13:24:05.175 +05:30 [Debug] '"MasterDbContext"' generated a value for the property '"Id"."Account"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 13:24:05.301 +05:30 [Debug] Context '"MasterDbContext"' started tracking '"Account"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 13:24:05.305 +05:30 [Debug] DetectChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 13:24:05.334 +05:30 [Debug] DetectChanges completed for '"MasterDbContext"'.
+===> 2021-01-28 13:24:05.338 +05:30 [Debug] SaveChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 13:24:05.341 +05:30 [Debug] DetectChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 13:24:05.343 +05:30 [Debug] The unchanged property '"Account"."Created"' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+===> 2021-01-28 13:24:05.345 +05:30 [Debug] The unchanged property '"Account"."Modified"' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+===> 2021-01-28 13:24:05.345 +05:30 [Debug] DetectChanges completed for '"MasterDbContext"'.
+===> 2021-01-28 13:24:05.370 +05:30 [Information] Saved 1 entities to in-memory store.
+===> 2021-01-28 13:24:05.384 +05:30 [Debug] An entity of type '"Account"' tracked by '"MasterDbContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 13:24:05.392 +05:30 [Debug] SaveChanges completed for '"MasterDbContext"' with 1 entities written to the database.
+===> 2021-01-28 13:24:05.393 +05:30 [Debug] Compiling query expression: "
+"'"DbSet<User>()
+    .Any()"'
+===> 2021-01-28 13:24:05.396 +05:30 [Debug] Generated query execution expression: "
+"'"queryContext => new QueryingEnumerable<bool>(
+    queryContext, 
+    new ResultEnumerable(() => new ValueBuffer(new object[]{ (object)InMemoryShapedQueryCompilingExpressionVisitor.Table(
+        queryContext: queryContext, 
+        entityType: EntityType: User)
+        .Any() }))
+        .Select(valueBuffer => new ValueBuffer(new object[]{ (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+            valueBuffer: valueBuffer, 
+            index: 0, 
+            property: null) })), 
+    Func<QueryContext, ValueBuffer, bool>, 
+    TEST_MulltiTenantAPI_Demo.Entity.Context.MasterDbContext, 
+    False
+)
+    .Single()"'
+===> 2021-01-28 13:24:05.430 +05:30 [Debug] '"MasterDbContext"' generated a value for the property '"Id"."User"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 13:24:05.513 +05:30 [Debug] Context '"MasterDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 13:24:05.515 +05:30 [Debug] DetectChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 13:24:05.534 +05:30 [Debug] DetectChanges completed for '"MasterDbContext"'.
+===> 2021-01-28 13:24:05.534 +05:30 [Debug] SaveChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 13:24:05.535 +05:30 [Debug] DetectChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 13:24:05.535 +05:30 [Debug] The unchanged property '"User"."Created"' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+===> 2021-01-28 13:24:05.536 +05:30 [Debug] The unchanged property '"User"."Modified"' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+===> 2021-01-28 13:24:05.536 +05:30 [Debug] DetectChanges completed for '"MasterDbContext"'.
+===> 2021-01-28 13:24:05.537 +05:30 [Information] Saved 1 entities to in-memory store.
+===> 2021-01-28 13:24:05.537 +05:30 [Debug] An entity of type '"User"' tracked by '"MasterDbContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 13:24:05.537 +05:30 [Debug] SaveChanges completed for '"MasterDbContext"' with 1 entities written to the database.
+===> 2021-01-28 13:24:05.539 +05:30 [Debug] '"MasterDbContext"' disposed.
+===> 2021-01-28 13:24:05.589 +05:30 [Debug] Loaded hosting startup assembly "TEST_MulltiTenantAPI_Demo.Api"
+===> 2021-01-28 13:24:05.639 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/info - -
+===> 2021-01-28 13:24:05.643 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2021-01-28 13:24:05.688 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 13:24:05.706 +05:30 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2021-01-28 13:24:05.837 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/info"'
+===> 2021-01-28 13:24:05.838 +05:30 [Debug] Endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController.ApiInfo (TEST_MulltiTenantAPI_Demo.Api)"' with route pattern '"api/Info"' is valid for the request path '"/api/info"'
+===> 2021-01-28 13:24:05.847 +05:30 [Debug] Request matched endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController.ApiInfo (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:24:05.921 +05:30 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2021-01-28 13:24:05.924 +05:30 [Information] Executing endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController.ApiInfo (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:24:05.939 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+===> 2021-01-28 13:24:05.972 +05:30 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController" ("TEST_MulltiTenantAPI_Demo.Api").
+===> 2021-01-28 13:24:05.973 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2021-01-28 13:24:05.973 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2021-01-28 13:24:05.974 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2021-01-28 13:24:05.974 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2021-01-28 13:24:05.974 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2021-01-28 13:24:05.976 +05:30 [Debug] Executing controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 13:24:05.976 +05:30 [Debug] Executed controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 13:24:05.985 +05:30 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2021-01-28 13:24:06.023 +05:30 [Information] Executed action "TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController.ApiInfo (TEST_MulltiTenantAPI_Demo.Api)" in 37.651ms
+===> 2021-01-28 13:24:06.024 +05:30 [Information] Executed endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController.ApiInfo (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:24:06.050 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api/info - - - 200 2517 text/html 414.5447ms
+===> 2021-01-28 13:24:22.372 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync application/json -
+===> 2021-01-28 13:24:22.377 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 13:24:22.407 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:24:22.407 +05:30 [Debug] Endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"' with route pattern '"api/TaxAccountNumberAsync"' is valid for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:24:22.408 +05:30 [Debug] Request matched endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:24:22.881 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+===> 2021-01-28 13:24:25.537 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+===> 2021-01-28 13:24:25.537 +05:30 [Information] Executing endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:24:27.807 +05:30 [Information] Route matched with "{action = \"GetAll\", controller = \"TaxAccountNumberAsync\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel] GetAll()" on controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api").
+===> 2021-01-28 13:24:27.808 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2021-01-28 13:24:27.808 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2021-01-28 13:24:27.808 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:24:27.808 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2021-01-28 13:24:27.808 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:24:27.808 +05:30 [Debug] Executing controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 13:24:27.942 +05:30 [Information] Executed action "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)" in 134.3046ms
+===> 2021-01-28 13:24:27.955 +05:30 [Information] Executed endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:24:27.969 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TEST_MulltiTenantAPI_Demo.Domain.Service.TaxAccountNumberServiceAsync`2[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel,TEST_MulltiTenantAPI_Demo.Entity.TaxAccountNumber]' while attempting to activate 'TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method265(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+===> 2021-01-28 13:24:28.206 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync application/json - - 500 - text/plain 5833.9456ms
+===> 2021-01-28 13:24:49.357 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync?id=1 application/json -
+===> 2021-01-28 13:24:49.358 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 13:24:49.358 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:24:49.358 +05:30 [Debug] Endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"' with route pattern '"api/TaxAccountNumberAsync"' is valid for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:24:49.358 +05:30 [Debug] Request matched endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:24:49.362 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+===> 2021-01-28 13:24:49.362 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+===> 2021-01-28 13:24:49.362 +05:30 [Information] Executing endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:24:49.363 +05:30 [Information] Route matched with "{action = \"GetAll\", controller = \"TaxAccountNumberAsync\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel] GetAll()" on controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api").
+===> 2021-01-28 13:24:49.363 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2021-01-28 13:24:49.363 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2021-01-28 13:24:49.363 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:24:49.363 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2021-01-28 13:24:49.363 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:24:49.363 +05:30 [Debug] Executing controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 13:24:49.365 +05:30 [Information] Executed action "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)" in 1.7188ms
+===> 2021-01-28 13:24:49.368 +05:30 [Information] Executed endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:24:49.370 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TEST_MulltiTenantAPI_Demo.Domain.Service.TaxAccountNumberServiceAsync`2[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel,TEST_MulltiTenantAPI_Demo.Entity.TaxAccountNumber]' while attempting to activate 'TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method265(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+===> 2021-01-28 13:24:49.390 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync?id=1 application/json - - 500 - text/plain 33.1656ms
+===> 2021-01-28 13:25:09.892 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync?$filter=id%20eq%201 application/json -
+===> 2021-01-28 13:25:09.893 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 13:25:09.893 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:25:09.893 +05:30 [Debug] Endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"' with route pattern '"api/TaxAccountNumberAsync"' is valid for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:25:09.893 +05:30 [Debug] Request matched endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:25:09.911 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+===> 2021-01-28 13:25:09.912 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+===> 2021-01-28 13:25:09.912 +05:30 [Information] Executing endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:25:09.912 +05:30 [Information] Route matched with "{action = \"GetAll\", controller = \"TaxAccountNumberAsync\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel] GetAll()" on controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api").
+===> 2021-01-28 13:25:09.912 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2021-01-28 13:25:09.912 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2021-01-28 13:25:09.912 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:25:09.912 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2021-01-28 13:25:09.913 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:25:09.913 +05:30 [Debug] Executing controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 13:25:09.917 +05:30 [Information] Executed action "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)" in 4.1556ms
+===> 2021-01-28 13:25:09.917 +05:30 [Information] Executed endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:25:09.922 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TEST_MulltiTenantAPI_Demo.Domain.Service.TaxAccountNumberServiceAsync`2[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel,TEST_MulltiTenantAPI_Demo.Entity.TaxAccountNumber]' while attempting to activate 'TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method265(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+===> 2021-01-28 13:25:09.935 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync?$filter=id%20eq%201 application/json - - 500 - text/plain 42.3287ms
+===> 2021-01-28 13:28:27.001 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/swagger/index.html - -
+===> 2021-01-28 13:28:27.452 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/swagger/index.html - - - 200 - text/html;charset=utf-8 385.8333ms
+===> 2021-01-28 13:28:27.862 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/swagger/v1/swagger.json - -
+===> 2021-01-28 13:28:28.119 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 256.3774ms
+===> 2021-01-28 13:29:11.947 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync?$filter=id%20eq%201 application/json -
+===> 2021-01-28 13:29:11.963 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 13:29:11.963 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:29:11.964 +05:30 [Debug] Endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"' with route pattern '"api/TaxAccountNumberAsync"' is valid for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:29:11.964 +05:30 [Debug] Request matched endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:29:11.972 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+===> 2021-01-28 13:29:11.972 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+===> 2021-01-28 13:29:11.972 +05:30 [Information] Executing endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:29:11.972 +05:30 [Information] Route matched with "{action = \"GetAll\", controller = \"TaxAccountNumberAsync\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel] GetAll()" on controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api").
+===> 2021-01-28 13:29:11.972 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2021-01-28 13:29:11.972 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2021-01-28 13:29:11.972 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:29:11.972 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2021-01-28 13:29:11.972 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:29:11.973 +05:30 [Debug] Executing controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 13:29:11.975 +05:30 [Information] Executed action "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)" in 2.2446ms
+===> 2021-01-28 13:29:11.975 +05:30 [Information] Executed endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:29:11.978 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TEST_MulltiTenantAPI_Demo.Domain.Service.TaxAccountNumberServiceAsync`2[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel,TEST_MulltiTenantAPI_Demo.Entity.TaxAccountNumber]' while attempting to activate 'TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method265(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+===> 2021-01-28 13:29:12.006 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync?$filter=id%20eq%201 application/json - - 500 - text/plain 59.3389ms
+===> 2021-01-28 13:29:19.110 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync application/json -
+===> 2021-01-28 13:29:19.110 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 13:29:19.110 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:29:19.110 +05:30 [Debug] Endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"' with route pattern '"api/TaxAccountNumberAsync"' is valid for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:29:19.110 +05:30 [Debug] Request matched endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:29:19.110 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+===> 2021-01-28 13:29:19.111 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+===> 2021-01-28 13:29:19.111 +05:30 [Information] Executing endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:29:19.111 +05:30 [Information] Route matched with "{action = \"GetAll\", controller = \"TaxAccountNumberAsync\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel] GetAll()" on controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api").
+===> 2021-01-28 13:29:19.111 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2021-01-28 13:29:19.111 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2021-01-28 13:29:19.111 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:29:19.111 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2021-01-28 13:29:19.111 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:29:19.111 +05:30 [Debug] Executing controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 13:29:19.112 +05:30 [Information] Executed action "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)" in 0.7731ms
+===> 2021-01-28 13:29:19.112 +05:30 [Information] Executed endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:29:19.113 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TEST_MulltiTenantAPI_Demo.Domain.Service.TaxAccountNumberServiceAsync`2[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel,TEST_MulltiTenantAPI_Demo.Entity.TaxAccountNumber]' while attempting to activate 'TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method265(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+===> 2021-01-28 13:29:19.130 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync application/json - - 500 - text/plain 20.8288ms
+===> 2021-01-28 13:29:34.819 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync application/json -
+===> 2021-01-28 13:29:34.819 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 13:29:34.819 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:29:34.819 +05:30 [Debug] Endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"' with route pattern '"api/TaxAccountNumberAsync"' is valid for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:29:34.819 +05:30 [Debug] Request matched endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:29:34.833 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+===> 2021-01-28 13:29:34.833 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+===> 2021-01-28 13:29:34.833 +05:30 [Information] Executing endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:29:34.833 +05:30 [Information] Route matched with "{action = \"GetAll\", controller = \"TaxAccountNumberAsync\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel] GetAll()" on controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api").
+===> 2021-01-28 13:29:34.833 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2021-01-28 13:29:34.834 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2021-01-28 13:29:34.834 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:29:34.834 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2021-01-28 13:29:34.834 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:29:34.834 +05:30 [Debug] Executing controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 13:29:34.919 +05:30 [Information] Executed action "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)" in 85.0332ms
+===> 2021-01-28 13:29:34.921 +05:30 [Information] Executed endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:29:34.948 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TEST_MulltiTenantAPI_Demo.Domain.Service.TaxAccountNumberServiceAsync`2[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel,TEST_MulltiTenantAPI_Demo.Entity.TaxAccountNumber]' while attempting to activate 'TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method265(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+===> 2021-01-28 13:29:35.068 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync application/json - - 500 - text/plain 249.7425ms
+===> 2021-01-28 13:30:12.524 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341//api/TaxAccountNumberAsync application/json -
+===> 2021-01-28 13:30:12.525 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 13:30:12.526 +05:30 [Debug] No candidates found for the request path '"//api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:30:12.526 +05:30 [Debug] Request did not match any endpoints
+===> 2021-01-28 13:30:12.537 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+===> 2021-01-28 13:30:12.538 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+===> 2021-01-28 13:30:12.671 +05:30 [Debug] Request did not match any routes
+===> 2021-01-28 13:30:12.902 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341//api/TaxAccountNumberAsync application/json - - 404 - - 377.9186ms
+===> 2021-01-28 13:30:25.246 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync application/json -
+===> 2021-01-28 13:30:25.246 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 13:30:25.246 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:30:25.246 +05:30 [Debug] Endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"' with route pattern '"api/TaxAccountNumberAsync"' is valid for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:30:25.246 +05:30 [Debug] Request matched endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:30:25.247 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+===> 2021-01-28 13:30:25.248 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+===> 2021-01-28 13:30:25.248 +05:30 [Information] Executing endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:30:25.248 +05:30 [Information] Route matched with "{action = \"GetAll\", controller = \"TaxAccountNumberAsync\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel] GetAll()" on controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api").
+===> 2021-01-28 13:30:25.248 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2021-01-28 13:30:25.248 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2021-01-28 13:30:25.248 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:30:25.248 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2021-01-28 13:30:25.248 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:30:25.248 +05:30 [Debug] Executing controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 13:30:25.251 +05:30 [Information] Executed action "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)" in 3.1839ms
+===> 2021-01-28 13:30:25.252 +05:30 [Information] Executed endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:30:25.261 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TEST_MulltiTenantAPI_Demo.Domain.Service.TaxAccountNumberServiceAsync`2[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel,TEST_MulltiTenantAPI_Demo.Entity.TaxAccountNumber]' while attempting to activate 'TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method265(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+===> 2021-01-28 13:30:25.285 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync application/json - - 500 - text/plain 39.4919ms
+===> 2021-01-28 13:30:57.810 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api//TaxAccountNumberAsync?$filter=id%20eq%201 application/json -
+===> 2021-01-28 13:30:57.810 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 13:30:57.810 +05:30 [Debug] No candidates found for the request path '"/api//TaxAccountNumberAsync"'
+===> 2021-01-28 13:30:57.810 +05:30 [Debug] Request did not match any endpoints
+===> 2021-01-28 13:30:57.811 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+===> 2021-01-28 13:30:57.812 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+===> 2021-01-28 13:30:57.822 +05:30 [Debug] Request did not match any routes
+===> 2021-01-28 13:30:57.850 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api//TaxAccountNumberAsync?$filter=id%20eq%201 application/json - - 404 - - 40.3652ms
+===> 2021-01-28 13:31:03.481 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync?$filter=id%20eq%201 application/json -
+===> 2021-01-28 13:31:03.481 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 13:31:03.481 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:31:03.481 +05:30 [Debug] Endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"' with route pattern '"api/TaxAccountNumberAsync"' is valid for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:31:03.481 +05:30 [Debug] Request matched endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:31:03.508 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+===> 2021-01-28 13:31:03.510 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+===> 2021-01-28 13:31:03.510 +05:30 [Information] Executing endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:31:03.510 +05:30 [Information] Route matched with "{action = \"GetAll\", controller = \"TaxAccountNumberAsync\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel] GetAll()" on controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api").
+===> 2021-01-28 13:31:03.510 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2021-01-28 13:31:03.510 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2021-01-28 13:31:03.510 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:31:03.510 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2021-01-28 13:31:03.510 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:31:03.510 +05:30 [Debug] Executing controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 13:31:03.519 +05:30 [Information] Executed action "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)" in 8.8841ms
+===> 2021-01-28 13:31:03.520 +05:30 [Information] Executed endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:31:03.522 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TEST_MulltiTenantAPI_Demo.Domain.Service.TaxAccountNumberServiceAsync`2[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel,TEST_MulltiTenantAPI_Demo.Entity.TaxAccountNumber]' while attempting to activate 'TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method265(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+===> 2021-01-28 13:31:03.599 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync?$filter=id%20eq%201 application/json - - 500 - text/plain 117.7860ms
+===> 2021-01-28 13:31:31.144 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync?id%20=%201 application/json -
+===> 2021-01-28 13:31:31.144 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 13:31:31.144 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:31:31.144 +05:30 [Debug] Endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"' with route pattern '"api/TaxAccountNumberAsync"' is valid for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:31:31.145 +05:30 [Debug] Request matched endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:31:31.146 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+===> 2021-01-28 13:31:31.147 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+===> 2021-01-28 13:31:31.147 +05:30 [Information] Executing endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:31:31.147 +05:30 [Information] Route matched with "{action = \"GetAll\", controller = \"TaxAccountNumberAsync\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel] GetAll()" on controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api").
+===> 2021-01-28 13:31:31.147 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2021-01-28 13:31:31.147 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2021-01-28 13:31:31.147 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:31:31.147 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2021-01-28 13:31:31.147 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:31:31.147 +05:30 [Debug] Executing controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 13:31:31.162 +05:30 [Information] Executed action "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)" in 14.8277ms
+===> 2021-01-28 13:31:31.163 +05:30 [Information] Executed endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:31:31.177 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TEST_MulltiTenantAPI_Demo.Domain.Service.TaxAccountNumberServiceAsync`2[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel,TEST_MulltiTenantAPI_Demo.Entity.TaxAccountNumber]' while attempting to activate 'TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method265(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+===> 2021-01-28 13:31:31.443 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync?id%20=%201 application/json - - 500 - text/plain 298.5795ms
+===> 2021-01-28 13:31:39.736 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync application/json -
+===> 2021-01-28 13:31:39.737 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 13:31:39.737 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:31:39.737 +05:30 [Debug] Endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"' with route pattern '"api/TaxAccountNumberAsync"' is valid for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 13:31:39.737 +05:30 [Debug] Request matched endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:31:39.738 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+===> 2021-01-28 13:31:39.738 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+===> 2021-01-28 13:31:39.738 +05:30 [Information] Executing endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:31:39.738 +05:30 [Information] Route matched with "{action = \"GetAll\", controller = \"TaxAccountNumberAsync\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel] GetAll()" on controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api").
+===> 2021-01-28 13:31:39.738 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2021-01-28 13:31:39.738 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2021-01-28 13:31:39.739 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:31:39.739 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2021-01-28 13:31:39.739 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 13:31:39.739 +05:30 [Debug] Executing controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 13:31:39.740 +05:30 [Information] Executed action "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)" in 0.9217ms
+===> 2021-01-28 13:31:39.740 +05:30 [Information] Executed endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 13:31:39.745 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TEST_MulltiTenantAPI_Demo.Domain.Service.TaxAccountNumberServiceAsync`2[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel,TEST_MulltiTenantAPI_Demo.Entity.TaxAccountNumber]' while attempting to activate 'TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method265(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+===> 2021-01-28 13:31:39.762 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync application/json - - 500 - text/plain 27.1838ms
+===> 2021-01-28 14:07:18.399 +05:30 [Information] Starting web host
+===> 2021-01-28 14:07:18.789 +05:30 [Information] User profile is available. Using '"C:\Users\Anish\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2021-01-28 14:07:18.839 +05:30 [Debug] Reading data from file '"C:\Users\Anish\AppData\Local\ASP.NET\DataProtection-Keys\key-1e7f607b-911c-4721-975c-6bc495f47ff8.xml"'.
+===> 2021-01-28 14:07:18.871 +05:30 [Debug] Reading data from file '"C:\Users\Anish\AppData\Local\ASP.NET\DataProtection-Keys\key-c4cb3bd4-2b87-46b2-bb82-ac9be3dc371b.xml"'.
+===> 2021-01-28 14:07:18.879 +05:30 [Debug] Found key {1e7f607b-911c-4721-975c-6bc495f47ff8}.
+===> 2021-01-28 14:07:18.889 +05:30 [Debug] Found key {c4cb3bd4-2b87-46b2-bb82-ac9be3dc371b}.
+===> 2021-01-28 14:07:18.904 +05:30 [Debug] Considering key {1e7f607b-911c-4721-975c-6bc495f47ff8} with expiration date 2021-04-05 09:20:09Z as default key.
+===> 2021-01-28 14:07:18.993 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2021-01-28 14:07:18.998 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2021-01-28 14:07:19.001 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.5.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2021-01-28 14:07:19.006 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2021-01-28 14:07:19.010 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2021-01-28 14:07:19.015 +05:30 [Debug] Using key {1e7f607b-911c-4721-975c-6bc495f47ff8} as the default key.
+===> 2021-01-28 14:07:19.017 +05:30 [Debug] Key ring with default key {1e7f607b-911c-4721-975c-6bc495f47ff8} was loaded during application startup.
+===> 2021-01-28 14:07:19.097 +05:30 [Information] Startup::Configure
+===> 2021-01-28 14:07:21.179 +05:30 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2021-01-28 14:07:21.303 +05:30 [Debug] An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: "configuration added for 'Proxies:UseLazyLoadingProxies', configuration added for 'Proxies:UseChangeTrackingProxies'".
+===> 2021-01-28 14:07:22.522 +05:30 [Information] Entity Framework Core "5.0.2" initialized '"MasterDbContext"' using provider '"Microsoft.EntityFrameworkCore.InMemory"' with options: "StoreName=TestDB-b6c5a226-c2ac-41b3-89f9-f44f83149116 using lazy-loading proxies "
+===> 2021-01-28 14:07:22.566 +05:30 [Debug] Compiling query expression: "
+"'"DbSet<Account>()
+    .Any()"'
+===> 2021-01-28 14:07:22.790 +05:30 [Debug] Generated query execution expression: "
+"'"queryContext => new QueryingEnumerable<bool>(
+    queryContext, 
+    new ResultEnumerable(() => new ValueBuffer(new object[]{ (object)InMemoryShapedQueryCompilingExpressionVisitor.Table(
+        queryContext: queryContext, 
+        entityType: EntityType: Account)
+        .Any() }))
+        .Select(valueBuffer => new ValueBuffer(new object[]{ (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+            valueBuffer: valueBuffer, 
+            index: 0, 
+            property: null) })), 
+    Func<QueryContext, ValueBuffer, bool>, 
+    TEST_MulltiTenantAPI_Demo.Entity.Context.MasterDbContext, 
+    False
+)
+    .Single()"'
+===> 2021-01-28 14:07:23.118 +05:30 [Debug] '"MasterDbContext"' generated a value for the property '"Id"."Account"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 14:07:23.224 +05:30 [Debug] Context '"MasterDbContext"' started tracking '"Account"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 14:07:23.229 +05:30 [Debug] DetectChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 14:07:23.256 +05:30 [Debug] DetectChanges completed for '"MasterDbContext"'.
+===> 2021-01-28 14:07:23.260 +05:30 [Debug] SaveChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 14:07:23.264 +05:30 [Debug] DetectChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 14:07:23.267 +05:30 [Debug] The unchanged property '"Account"."Created"' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+===> 2021-01-28 14:07:23.271 +05:30 [Debug] The unchanged property '"Account"."Modified"' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+===> 2021-01-28 14:07:23.271 +05:30 [Debug] DetectChanges completed for '"MasterDbContext"'.
+===> 2021-01-28 14:07:23.296 +05:30 [Information] Saved 1 entities to in-memory store.
+===> 2021-01-28 14:07:23.309 +05:30 [Debug] An entity of type '"Account"' tracked by '"MasterDbContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 14:07:23.318 +05:30 [Debug] SaveChanges completed for '"MasterDbContext"' with 1 entities written to the database.
+===> 2021-01-28 14:07:23.319 +05:30 [Debug] Compiling query expression: "
+"'"DbSet<User>()
+    .Any()"'
+===> 2021-01-28 14:07:26.781 +05:30 [Debug] Generated query execution expression: "
+"'"queryContext => new QueryingEnumerable<bool>(
+    queryContext, 
+    new ResultEnumerable(() => new ValueBuffer(new object[]{ (object)InMemoryShapedQueryCompilingExpressionVisitor.Table(
+        queryContext: queryContext, 
+        entityType: EntityType: User)
+        .Any() }))
+        .Select(valueBuffer => new ValueBuffer(new object[]{ (object)ExpressionExtensions.ValueBufferTryReadValue<bool>(
+            valueBuffer: valueBuffer, 
+            index: 0, 
+            property: null) })), 
+    Func<QueryContext, ValueBuffer, bool>, 
+    TEST_MulltiTenantAPI_Demo.Entity.Context.MasterDbContext, 
+    False
+)
+    .Single()"'
+===> 2021-01-28 14:07:26.816 +05:30 [Debug] '"MasterDbContext"' generated a value for the property '"Id"."User"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 14:07:26.900 +05:30 [Debug] Context '"MasterDbContext"' started tracking '"User"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 14:07:26.901 +05:30 [Debug] DetectChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 14:07:26.918 +05:30 [Debug] DetectChanges completed for '"MasterDbContext"'.
+===> 2021-01-28 14:07:26.919 +05:30 [Debug] SaveChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 14:07:26.919 +05:30 [Debug] DetectChanges starting for '"MasterDbContext"'.
+===> 2021-01-28 14:07:26.919 +05:30 [Debug] The unchanged property '"User"."Created"' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+===> 2021-01-28 14:07:26.919 +05:30 [Debug] The unchanged property '"User"."Modified"' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+===> 2021-01-28 14:07:26.920 +05:30 [Debug] DetectChanges completed for '"MasterDbContext"'.
+===> 2021-01-28 14:07:26.920 +05:30 [Information] Saved 1 entities to in-memory store.
+===> 2021-01-28 14:07:26.920 +05:30 [Debug] An entity of type '"User"' tracked by '"MasterDbContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2021-01-28 14:07:26.920 +05:30 [Debug] SaveChanges completed for '"MasterDbContext"' with 1 entities written to the database.
+===> 2021-01-28 14:07:26.924 +05:30 [Debug] '"MasterDbContext"' disposed.
+===> 2021-01-28 14:07:26.978 +05:30 [Debug] Loaded hosting startup assembly "TEST_MulltiTenantAPI_Demo.Api"
+===> 2021-01-28 14:07:27.054 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/info - -
+===> 2021-01-28 14:07:27.058 +05:30 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2021-01-28 14:07:27.120 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 14:07:27.135 +05:30 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2021-01-28 14:07:27.242 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/info"'
+===> 2021-01-28 14:07:27.243 +05:30 [Debug] Endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController.ApiInfo (TEST_MulltiTenantAPI_Demo.Api)"' with route pattern '"api/Info"' is valid for the request path '"/api/info"'
+===> 2021-01-28 14:07:27.263 +05:30 [Debug] Request matched endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController.ApiInfo (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 14:07:27.370 +05:30 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2021-01-28 14:07:27.372 +05:30 [Information] Executing endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController.ApiInfo (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 14:07:27.385 +05:30 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+===> 2021-01-28 14:07:27.425 +05:30 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController" ("TEST_MulltiTenantAPI_Demo.Api").
+===> 2021-01-28 14:07:27.427 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2021-01-28 14:07:27.427 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2021-01-28 14:07:27.428 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2021-01-28 14:07:27.429 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2021-01-28 14:07:27.429 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2021-01-28 14:07:27.431 +05:30 [Debug] Executing controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 14:07:27.431 +05:30 [Debug] Executed controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 14:07:27.442 +05:30 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2021-01-28 14:07:27.480 +05:30 [Information] Executed action "TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController.ApiInfo (TEST_MulltiTenantAPI_Demo.Api)" in 43.6658ms
+===> 2021-01-28 14:07:27.482 +05:30 [Information] Executed endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.v1.InfoController.ApiInfo (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 14:07:27.490 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api/info - - - 200 2517 text/html 446.7747ms
+===> 2021-01-28 14:07:29.088 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/swagger/index.html - -
+===> 2021-01-28 14:07:29.260 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/swagger/index.html - - - 200 - text/html;charset=utf-8 171.7837ms
+===> 2021-01-28 14:07:29.499 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/swagger/v1/swagger.json - -
+===> 2021-01-28 14:07:29.749 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 250.8209ms
+===> 2021-01-28 14:07:32.506 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync application/json -
+===> 2021-01-28 14:07:32.506 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 14:07:32.509 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 14:07:32.510 +05:30 [Debug] Endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"' with route pattern '"api/TaxAccountNumberAsync"' is valid for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 14:07:32.510 +05:30 [Debug] Request matched endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 14:07:32.646 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException: IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateSignature(String token, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+===> 2021-01-28 14:07:32.733 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10503: Signature validation failed. Keys tried: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+Exceptions caught:
+ '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+===> 2021-01-28 14:07:32.734 +05:30 [Information] Executing endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 14:07:32.739 +05:30 [Information] Route matched with "{action = \"GetAll\", controller = \"TaxAccountNumberAsync\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel] GetAll()" on controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api").
+===> 2021-01-28 14:07:32.740 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2021-01-28 14:07:32.740 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2021-01-28 14:07:32.740 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 14:07:32.740 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2021-01-28 14:07:32.740 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 14:07:32.740 +05:30 [Debug] Executing controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 14:08:59.075 +05:30 [Debug] Executed controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 14:08:59.076 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync - -
+===> 2021-01-28 14:08:59.076 +05:30 [Debug] The request path "" does not match the path filter
+===> 2021-01-28 14:08:59.076 +05:30 [Debug] 1 candidate(s) found for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 14:08:59.077 +05:30 [Debug] Endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"' with route pattern '"api/TaxAccountNumberAsync"' is valid for the request path '"/api/TaxAccountNumberAsync"'
+===> 2021-01-28 14:08:59.077 +05:30 [Debug] Request matched endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 14:08:59.341 +05:30 [Debug] AuthenticationScheme: "Bearer" was not authenticated.
+===> 2021-01-28 14:08:59.341 +05:30 [Information] Executing endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 14:08:59.342 +05:30 [Information] Route matched with "{action = \"GetAll\", controller = \"TaxAccountNumberAsync\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[TEST_MulltiTenantAPI_Demo.Domain.TaxAccountNumberViewModel] GetAll()" on controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api").
+===> 2021-01-28 14:08:59.343 +05:30 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2021-01-28 14:08:59.343 +05:30 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2021-01-28 14:08:59.343 +05:30 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 14:08:59.343 +05:30 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2021-01-28 14:08:59.343 +05:30 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.OData.Query.EnableQueryAttribute (Order: 0)"]
+===> 2021-01-28 14:08:59.343 +05:30 [Debug] Executing controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 14:09:43.426 +05:30 [Debug] Executed controller factory for controller "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController" ("TEST_MulltiTenantAPI_Demo.Api")
+===> 2021-01-28 14:09:43.430 +05:30 [Debug] Connection ID ""17654110540902957081"" disconnecting.
+===> 2021-01-28 14:09:43.947 +05:30 [Information] Executed action "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)" in 131207.8232ms
+===> 2021-01-28 14:09:43.947 +05:30 [Information] Executed action "TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)" in 44603.9973ms
+===> 2021-01-28 14:09:43.948 +05:30 [Information] Executed endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 14:09:43.948 +05:30 [Information] Executed endpoint '"TEST_MulltiTenantAPI_Demo.Api.Controllers.TaxAccountNumberAsyncController.GetAll (TEST_MulltiTenantAPI_Demo.Api)"'
+===> 2021-01-28 14:09:43.949 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'key')
+   at System.Collections.Generic.Dictionary`2.FindValue(TKey key)
+   at System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   at Microsoft.AspNetCore.OData.ODataOptions.GetODataServiceProvider(String prefix)
+   at Microsoft.AspNetCore.OData.Extensions.HttpRequestExtensions.GetSubServiceProvider(HttpRequest request)
+   at Microsoft.AspNetCore.OData.Query.ODataQueryOptions..ctor(ODataQueryContext context, HttpRequest request)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.OnActionExecuting(ActionExecutingContext actionExecutingContext)
+   at Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+===> 2021-01-28 14:09:43.949 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'key')
+   at System.Collections.Generic.Dictionary`2.FindValue(TKey key)
+   at System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   at Microsoft.AspNetCore.OData.ODataOptions.GetODataServiceProvider(String prefix)
+   at Microsoft.AspNetCore.OData.Extensions.HttpRequestExtensions.GetSubServiceProvider(HttpRequest request)
+   at Microsoft.AspNetCore.OData.Query.ODataQueryOptions..ctor(ODataQueryContext context, HttpRequest request)
+   at Microsoft.AspNetCore.OData.Query.EnableQueryAttribute.OnActionExecuting(ActionExecutingContext actionExecutingContext)
+   at Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+===> 2021-01-28 14:09:43.981 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync application/json - - 500 - text/plain 131476.0639ms
+===> 2021-01-28 14:09:43.994 +05:30 [Information] Request finished HTTP/1.1 GET http://localhost:44341/api/TaxAccountNumberAsync - - - 500 - text/plain 44918.1060ms

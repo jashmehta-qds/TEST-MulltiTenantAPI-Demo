@@ -1,0 +1,23 @@
+<#@ include file="../TEST_MulltiTenantAPI_Demo.Entity/TemplateCommon.tt"#>
+
+/// <summary>
+/// Designed by AnaSoft Inc. 2019-2021(c)
+/// http://www.anasoft.net/apincore 
+/// 
+/// NOTE:
+/// Execute VS command to run db migration
+/// https://docs.microsoft.com/en-us/ef/core/cli/powershell
+/// </summary>
+<#
+	var tc = new TemplateCommon();
+
+	//get VS dte
+	EnvDTE.DTE dte = tc.GetVSEnvDTE();
+	dte.ExecuteCommand("View.PackageManagerConsole");
+	var migrationCommand =  "add-migration AddNewMigration_" + DateTime.Now.ToString("yyyyMMddHHmmssf");
+	migrationCommand += " -Project 'TEST_MulltiTenantAPI_Demo.Entity'";                  
+	dte.ExecuteCommand("View.PackageManagerConsole", migrationCommand);
+	#>	
+	//<#= migrationCommand #>
+	<#
+#>
